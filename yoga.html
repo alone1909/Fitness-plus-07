@@ -33,14 +33,7 @@
     
 }
 
-.banner1 .banner-1-body h1:nth-child(2){
-    
-    font-size: 6.8rem;
-    font-weight: 100;
-}
-.banner1 .banner-1-body h1:nth-child(2) span{
-    font-weight: 700;
-}
+
 .banner1 .banner-1-body p{
     color: #706e78;
     font-size: 2.5rem;
@@ -97,30 +90,13 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: var(--secondary-font-family);
+    
     font-size: 30px;
-    line-height: var(--line-height);
-    background-color: var(--body-bg-color);
     background-color: #ffffff;
     background-size: cover;
 }
 
-:root{
-  
-    --primary-font-family:'lato';
-    --secondary-font-family:'Open Sans';
 
-
-   
-    --brand-color:#f25c5c;
-    --text-color:#5f5f5f;
-    --body-bg-color:#ffffff;
-
-
-    --primary-font-size:3.5rem;
-    --secondary-font-size:1.3rem;
-    --line-height:2.5rem;
-}
 .nav {
         list-style: none;
         display: flex;
@@ -218,29 +194,11 @@ body{
 }
 
 
-#meditation-tips table {
-    width: 90%;
-    height: 65%;
-    margin-top: -55vh;
-    margin-left: -90vh;
-}
 
 #yoga-tips video:hover {
     background-color: transparent;
 }
 
-table {
-    width: 350px;
-    height: 50%;
-    background-color: rgb(202, 246, 202);
-    color: black;
-    font-weight: 900;
-    font-size: 15px;
-    border-collapse: collapse;
-}
-th, td {
-      border: 1px solid black;
-    }
 
 #week {
     width: 9vh;
@@ -248,6 +206,17 @@ th, td {
 }
 h2{
     margin-left: 17%;
+}
+#yoga-list {
+    margin-left: -70vh;
+margin-top: -890px;
+    width: 300px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:smaller;
+}
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -307,49 +276,21 @@ h2{
         <div id="meditation-tips">
             <video src="img/Video-1.mp4" autoplay muted loop style="height: 60vh; width: 100%;"></video>
       
-            <table>
-                <tr>
-                    <td id="week">
-                        Week 1-2:
-                    </td>
-                    <td> 1. Find a quiet and comfortable place to sit or lie down. <br>
-                        2. Close your eyes and focus your attention on your breath. <br>
-                        3. Exhale slowly through your mouth, releasing tension.
-                    </td>
-                    <td>05-15 minutes</td>
-                </tr>
-                <tr>
-                    <td id="week">Week 3-4:</td>
-
-                    <td> 1. Bring awareness to different parts of your body, starting from your toes and moving up to
-                        your
-                        head.</td>
-                    <td>10-15 minutes</td>
-                </tr>
-                <tr>
-                    <td id="week">
-                        Week 5-6:
-                    </td>
-                    <td>
-                        1. Extend those feelings to others, silently repeating phrases like "May I be happy, may others
-                        be happy."<br>
-                        2. Include loved ones, acquaintances, and even those with whom you may have difficulties in your
-                        well-wishing meditation.
-                    </td>
-                    <td>10-20 minutes</td>
-                </tr>
-                <tr>
-                    <td id="week">
-                        Week 7-8:
-                    </td>
-                    <td> 1. Follow along with the guided instructions.
-                        Remember, consistency is key, and it's normal for the mind to wander during meditation. Be
-                        patient with yourself and enjoy the process of cultivating mindfulness. If at any point you
-                        experience discomfort or worsening of your medical condition, consult with your healthcare
-                        provider.</td>
-                    <td>20-30 minutes</td>
-                </tr>
-            </table>
+            <div id="yoga-tips">
+                <video src="yoga.mp4" autoplay muted loop style="height: 60vh; width: 100%; display: -10;"></video>
+              
+                <ul id="yoga-list" style="text-align: left;">
+                    <li>Mountain Pose (Tadasana)</li>
+                    <li>Forward Fold (Uttanasana)</li>
+                    <li> Extended Triangle</li>
+                    <li> Sphinx Pose</li>
+                    <li>Child s Pose</li>
+                    <li>Sphinx Pose</li>
+                    <li>Cobra Pose</li>
+                    <li>Downward-Facing Dog</li>
+                    <li>Cat-Cow</li>
+                </ul>
+            </div>
         </div>
     </div>
    
