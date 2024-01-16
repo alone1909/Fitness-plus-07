@@ -195,7 +195,7 @@
             <input type="number" id="weight" placeholder="Enter weight"><br><br>
             <label for="height">Height (cm):</label>
             <input type="number" id="height" placeholder="Enter height"><br><br>
-            <button onclick="calculateBMI()"">Calculate BMI</button>
+            <button onclick="calculateBMI()">Calculate BMI</button>
         </div>
 
         <div class="result">
@@ -218,12 +218,12 @@
             if (weight > 0 && height > 0) {
                 const bmi = weight / (height * height);
                 bmiResult.textContent = 'Your BMI: ' + bmi.toFixed(2);
-                console.log(bmiResult);
+             
 
                 if (bmi < 18.5) {
                     fitnessDetails.textContent = 'Underweight - Increase calorie intake through healthy foods. \nFocus on nutrient-dense meals to gain healthy weight. \nIncorporate strength training exercises to build muscle mass. \nConsider consulting a nutritionist.';
                 } else if (bmi >= 18.5 && bmi < 25) {
-                    fitnessDetails.textContent = 'Normal weight - Maintain a balanced diet rich in fruits, vegetables, lean proteins, and whole grains. \nEngage in regular physical activity for overall fitness. \nAim to maintain a healthy lifestyle with consistent exercise and healthy eating habits. \nPrioritize mental health with stress-reducing activities and sufficient sleep.';
+                    fitnessDetails.textContent = 'Normal weight - Maintain a balanced diet rich in fruits, vegetables, lean proteins, and whole grains. \nEngage in regular physical activity for overall fitness. \nAim to maintain a healthy lifestyle with consistent exercise and healthy eating habits.Prioritize mental health with stress-reducing activities and sufficient sleep.';
                 } else if (bmi >= 25 && bmi < 30) {
                     fitnessDetails.textContent = 'Overweight - Focus on portion control and balanced meals. \nIncrease physical activity with a mix of cardio and strength training. \nReduce intake of processed foods, sugary drinks, and high-fat items. \nConsult a nutritionist or fitness professional for a tailored plan.';
                 } else {
