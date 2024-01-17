@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
     
-        
-.hello{
-    border: 5px solid white ;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 700px;
-    height: 580px;
-    border-radius: 20px;
+        body{
+            background-image: url(img/16.webp);
+  background-size: cover;
+        }
 
+.hello{
+    width: 600px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
+  height: 600px;
+  margin-left: 27%;
 
 }
 h1{
@@ -26,50 +32,14 @@ h1{
 }
 
 
-#gender{
-    font-style: italic;
-        text-align: center;
-        display: block;
-        width: 47%;
-        padding: 8px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 15px;
-        border-radius: 8px;
-    }
-#hg{
-    font-style: italic;
-        text-align: center;
-        display: block;
-        width: 60%;
-        padding: 3px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 20px;
-        border-radius: 8px;
-   
-}
+
+
 label{
     font-family: "Nunito", sans-serif;
     color: white;
     font-size: 20px;
 }
-.form input {
-        font-style: italic;
-        text-align: center;
-        display: block;
-        width: 45%;
-        padding: 8px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 15px;
-        border-radius: 8px;
 
-    }
-
-    .form input:hover {
-        transition: 1s;
-    }
     .nav {
         list-style: none;
         display: flex;
@@ -156,14 +126,58 @@ label{
         background-color: rgb(31, 30, 30);
         box-shadow: 0px 0px 5px white, 0px 0px 30px white, 0px 0px 90px white;
     }
+    .input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-100%);
+}
+
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.x{
+    margin-left: -30%;
+    margin-top: -1%;
+}
     
     </style>
  </head>
- <body style="background-image: url(img/backg5.avif); background-size: cover;">
+ <body>
     <div class="menu">
 
         <div class="flex">
-            <div class="x"><a href="index.html" style="color: #fff; font-size: 30px; margin-left: -130%;" >Fitness Plus+</a></div>
+            <div class="x">     <h1>Fitness Plus <span style="color: gray;">+</span></h1></div>
 
             <ul class="nav">
                 <li class="hi"><a href="index.html">Home</a></li>
@@ -171,7 +185,7 @@ label{
                 <li class="hi"><a href="contact.html">Our Team</a></li>
             </ul>
 
-            <a href="register.html" class="btn">Register</a>
+  
         </div>
     </div><br>
 
@@ -181,21 +195,30 @@ label{
         <form>
             <h1>Register To Join</h1>
             <div class="form">
-                <input type="text" name="" placeholder="Enter your First Name" required>
-                <input type="text" name="" placeholder="Enter your Last Name" required>
-                
-                <input type="text" name="" placeholder="Enter your Email" required>
-                <input type="date">
-              <input type="number"placeholder="Enter Your Height" required>
-             
-              <input type="number"placeholder="Enter Your Weight" required>   
+
+                <div class="input-field">
+                    <input type="text" required>
+                    <label>Enter your First Name</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" required>
+                    <label>Enter your Last Name</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="email" required>
+                    <label>Enter your Email</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="date" required>
               
-            
-                <select id="gender" name="gender" aria-placeholder="select the gender" >
-                  <option value="male" required>Male</option>
-                  <option value="Female" required>Female</option>
-                  <option value="Others" required>Others</option>
-              </select>
+                  </div>
+                  <div class="input-field">
+                    <input type="number" required>
+                    <label>Enter your Height</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="number" required>
+                    <label>Enter your Weight</label>  
         </form>
     </div>
     <script>
@@ -203,12 +226,11 @@ label{
           alert("Please Consult To The doctor");
         }
     
-        
+
         </script>
         
         <form>
-            
-           
+
              <label for="">Do you have any medical issue !</label>
              <button onclick="myFunction()" class="button">Yes</button>
             

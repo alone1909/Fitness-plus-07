@@ -47,10 +47,10 @@
         }
 
         div #video-container {
-            width: 100%;
+            width: 60%;
             margin-top: 10px;
             border: 5px solid red;
-            height: 400%;
+            height: 200%;
 
         }
 
@@ -218,6 +218,11 @@
         margin: 0px;
         padding: 0px;
     }
+    #myVideo{
+        width: 100%;
+        margin-top: -5%;
+        height: 90%;
+    }
     
     </style>
 </head>
@@ -242,16 +247,10 @@
       </div><br>
 
 
-
-
-
-
-
         <div id="container-one">
-            <img src="img/fit.jpeg" width="100%" height="100%">
-            <h1 id="main-text">Take <label for="" style="color: #c68a2b; font-size: 60px;"> Care of your Body.</label>
-                <br>It's the only place you have to live In.
-            </h1>
+            <video autoplay muted loop id="myVideo">
+                <source src="img/ani.mp4" type="video/mp4">
+              </video>
 
         </div>
 

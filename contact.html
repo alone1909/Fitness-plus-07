@@ -1,192 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      font-family: Nunito, sans-serif;
+      margin-top: 5%;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(gray 0%, #fff 100%);
-  
-}
-
-.main-container {
-    background: #fff;
-    border-radius: 15px;
-    margin: 1rem;
-    padding: 20px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
-    width: 80%;
-    height: 790px;
-    margin-left: -12%;
-    margin-top: 7%;
-}
-
-h1{
-    text-align: center;
-    font-size: 30px;
-}
+    .text-blk {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      line-height: 25px;
+    }
 
 
+    .responsive-container-block {
+      min-height: 75px;
+      border: 2px solid #fff;
+      background: rgb(223, 238, 244);
+      height: 800px;
+      width: 78%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -10%;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      justify-content: space-evenly;
+    }
 
-.members {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    margin: 20px;
-    transition: all .3s ease;
-    cursor: pointer;
-}
-.team-member1{
-    margin: 20px;
-    transition: all .3s ease;
-    cursor: pointer;
-    margin-left: 11%;
-}
-
-.team-member:hover {
-    transform: scale(1.1);
-}
-.team-member1:hover{
-    transform: scale(1.1);
-}
-
-img {
-    width: 110px;
-    height: 140px;
-    border-radius: 50%;
-    margin: 12px;
-    margin-left: 5%;
-}
-
-p{
-    text-align: center;
-    font-size: 14px;
-    margin-left: -58%;
-}
-a{
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  
-}
-a:hover{
-  color: black;
-  transform: rotate(1);
-}
-.t{
-  margin-top: -52%;
-  font-weight: 700;
-  margin-left: 4%;
-}
-.srinu{
-    margin-left: 20%;
-}
-.le{
-    margin-left: 20%;
-}
-.fa {
-  padding: 5px;
-  font-size: 12px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 10%;
-  margin-right: 20%;
- 
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-  margin-right: 20%;
-
-}
-
-
-    </style>
-</head>
-<body>
-
-    <div class="t" >
-     
-     <a href="index.html">Home</a>
-    </div>
-
-
-    <div class="main-container">
-        <h2>Fitness Plus+ </h2>
-        <h1>Our Team</h1><br>
-       
-        <div class="members">
-            <div class="team-member">
-                <img src="img/sampath1.jpeg">
-                <h3>C.Sampath</h3>
-                <p>Web Developer</p>
-                <p>sampath_kumar@edunetworld.com</p>
-                <p>+91 9502963792</p>
-                <a href="https://www.linkedin.com/in/sampath-kumar-1655a3263/" class="fa fa-linkedin">Linked In</a>
-    
-             
-            </div>
-            <div class="team-member">
-                <img src="img/srinu3.jpeg" class="srinu">
-                <div class="le">
-                <h3>B.Srinivasulu</h3>
-                <p>web Developer</p>
-                <p>b_srinivasulu@edunetworld.com</p>
-                <p>+91 6302974955</p>
-                <a href="https://www.linkedin.com/in/byagari-srinivasulu-73668a264/" class="fa fa-linkedin">Linked In</a>
-            </div>
-            </div>
-            <div class="team-member1">
-                <img src="img/pavni2.jpeg">
-                <h3>K.Pavani</h3>
-                <p>Web Developer</p>
-                <p>k_pavani@edunetworld.com</p>
-                <p>+91 7893318102</p>
-                <a href="#" class="fa fa-linkedin">Linked In</a>
-
-            </div>
-            <div class="team-member">
-                <img src="img/megha.jpeg">
-                <h3>Meghagni</h3>
-                <p>Web Developer</p>
-                <p>meghagni_mukherjee@edunetworld.com</p>
-                <p>+91 9382311825</p>
-                <a href="#" class="fa fa-linkedin">Linked In</a>
-            </div>
-            <div class="team-member">
-                <img src="img/nageshwari.jpeg">
-                <h3>Nageshwari</h3>
-                <p>Web Developer</p>
-                <p>nageshwari@edunetworld.com</p>
-                <p>+91 8639654424</p>
-                <a href="#" class="fa fa-linkedin">Linked In</a>
-            </div>
-        </div>
-    </div>
    
+    
+
+    .img-wrapper {
+      width: 70%;
+
+    }
+
+
+    .social-media-links {
+      width: 125px;
+      display: flex;
+      margin-top: -15%;
+      justify-content: space-between;
+    }
+
+    .name {
+      font-size: 25px;
+      font-weight: 700;
+      color: rgb(102, 102, 102);
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 5px;
+      margin-left: 0px;
+    }
+
+    .position {
+      font-size: 25px;
+      font-weight: 700;
+      color: rgb(0, 135, 177);
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+    }
+
+    .team-img {
+      width: 90%;
+
+      border-radius: 50%;
+      height: 200px;
+    }
+
+    .team-card-container {
+      width: 280px;
+      margin: 0 0 40px 0;
+    }
+    button {
+        font-family: 'Baloo Bhai', 'cursive';
+        margin: 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-top: -20%;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(31, 30, 30);
+        /* box-shadow: 0px 0px 5px rgb(188, 10, 182), 0px 0px 30px rgb(188, 10, 182), 0px 0px 90px rgb(188, 10, 182); */
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  </style>
+</head>
+
+<body>
+ 
+
+
+
+    
+
+   <button> <a href="index.html">Home</a></button>
+
+
+  <div class="responsive-container-block">
+    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+      <div class="img-wrapper">
+        <img class="team-img" src="img/sampath1.jpeg">
+      </div>
+      <p class=" name">
+        C.Sampath Kumar
+      </p>
+      <p class=" position">
+        Web Developer <br>
+        PhNo:9502963792
+      </p>
+     
+      <div class="social-media-links">
+        <a href="http://www.twitter.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+        </a>
+        <a href="http://www.facebook.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+        </a>
+        <a href="http://www.instagram.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+        </a>
+        <a href="http://www.gmail.com/">
+          <img src="img/icons8-linkedin-30.png">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+      <div class="img-wrapper">
+        <img class="team-img" src="img/srinu.jpeg">
+      </div>
+      <p class="name">
+        B.Srinivasulu
+      </p>
+      <p class=" position">
+        Web Developer <br>
+        PhNo:6302974955
+      </p>
+      <div class="social-media-links">
+        <a href="http://www.twitter.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+        </a>
+        <a href="http://www.facebook.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+        </a>
+        <a href="http://www.instagram.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+        </a>
+        <a href="http://www.gmail.com/">
+          <img src="img/icons8-linkedin-30.png">
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+      <div class="img-wrapper">
+        <img class="team-img" src="img/pavni2.jpeg">
+      </div>
+      <p class="name">
+        K.Pavani
+      </p>
+      <p class="position">
+        Web Developer <br>
+        PhNo:7893318102
+      </p>
+      <div class="social-media-links">
+        <a href="http://www.twitter.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+        </a>
+        <a href="http://www.facebook.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+        </a>
+        <a href="http://www.instagram.com/">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+        </a>
+        <a href="http://www.gmail.com/">
+          <img src="img/icons8-linkedin-30.png">
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+      <div class="img-wrapper">
+        <img class="team-img" src="img/megha.jpeg">
+      </div>
+      <p class=" name">
+        M.Meghagni
+      </p>
+      <p class=" position">
+        Web Developer <br>
+        PhNo:9382311825
+      </p>
+      <div class="social-media-links">
+        <a href="http://www.twitter.com/" target="_blank">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+        </a>
+        <a href="http://www.facebook.com/" target="_blank">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+        </a>
+        <a href="http://www.instagram.com/" target="_blank">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+        </a>
+        <a href="http://www.gmail.com/" target="_blank">
+          <img src="img/icons8-linkedin-30.png">
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+      <div class="img-wrapper">
+        <img class="team-img" src="img/nageshwari.jpeg">
+      </div>
+      <p class="name">
+        R.Nageshwari
+      </p>
+      <p class=" position">
+        Web Developer <br>
+        PhNo:8639654424
+      </p>
+      <div class="social-media-links">
+        <a href="http://www.twitter.com/" target="_blank">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+        </a>
+        <a href="http://www.facebook.com/" target="_blank">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+        </a>
+        <a href="http://www.instagram.com/" target="_blank">
+          <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+        </a>
+        <a href="http://www.gmail.com/" target="_blank">
+          <img src="img/icons8-linkedin-30.png">
+        </a>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
