@@ -20,12 +20,11 @@
     }
 
 
-    .responsive-container-block {
+    .responsive{
       min-height: 75px;
       border: 2px solid #fff;
-      background: rgb(223, 238, 244);
       height: 800px;
-      width: 78%;
+      width: 75%;
       display: flex;
       flex-wrap: wrap;
       margin-top: -10%;
@@ -40,6 +39,7 @@
 
     .img-wrapper {
       width: 70%;
+      margin-top: 10px;
 
     }
 
@@ -54,7 +54,6 @@
     .name {
       font-size: 25px;
       font-weight: 700;
-      color: rgb(102, 102, 102);
       margin-top: 0px;
       margin-right: 0px;
       margin-bottom: 5px;
@@ -62,9 +61,8 @@
     }
 
     .position {
-      font-size: 25px;
+      font-size: 15px;
       font-weight: 700;
-      color: rgb(0, 135, 177);
       margin-top: 0px;
       margin-right: 0px;
       margin-bottom: 50px;
@@ -72,10 +70,9 @@
     }
 
     .team-img {
-      width: 90%;
-
+      width: 80%;
       border-radius: 50%;
-      height: 200px;
+      height: 170px;
     }
 
     .team-card-container {
@@ -93,6 +90,7 @@
         font-size: 20px;
         margin-top: -20%;
         cursor: pointer;
+        
     }
 
     button:hover {
@@ -103,21 +101,127 @@
         text-decoration: none;
         color: white;
     }
+    .demo h1{
+      text-align: center;
+      margin-bottom: 120px;
+      font-weight: 900;
+      font-size: 40px;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .nav {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .hi a {
+      margin: 15px;
+      color: #fff;
+    }
+
+    .hi:hover a {
+      color: #fff;
+      text-shadow: 0px 0px 20px, 0px 0px 60px black, 0px 0px 90px black;
+    }
+
+    .menu {
+      width: 100%;
+      background: linear-gradient(to right, black 50%, gray);
+      margin-left: auto;
+      margin-bottom: 9%;
+      text-align: center;
+      height: 100px;
+      position: sticky;
+      top: 0px;
+
+    }
+
+    .flex a {
+      font-size: 20px;
+      text-decoration: none;
+
+
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -9px;
+      padding: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 900;
+    }
+
+    .f {
+      color: white;
+      font-size: 30px;
+
+
+    }
+
+    .btn {
+      padding: 10px 28px;
+      border-radius: 40px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      border: 1px solid white;
+      margin-left: 20%;
+    }
+
+    .btn:hover {
+      background-color: black;
+      box-shadow: 0px 0px 20px white, 0px 0px 25px white, 0px 0px 30px white;
+    }
+
   </style>
 </head>
 
 <body>
  
 
+ <div class="menu">
 
-
+  <div class="flex">
+    <div class="x"><a href="index.html" style="color: #fff; font-size: 30px; margin-left: -130%;">Fitness Plus+</a>
+    </div>
+    <ul class="nav">
+      <li class="hi"><a href="index.html">Home</a></li>
+      <li class="hi"><a href="bmi.html">Calculate BMI</a></li>
     
 
-   <button> <a href="index.html">Home</a></button>
+    </ul>
+
+    <a href="register.html" class="btn">Register</a>
+
+  </div>
+
+</div><br>
 
 
-  <div class="responsive-container-block">
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+
+
+
+
+
+
+
+
+   
+
+
+  <div class="responsive">
+
+    <div class="team-card-container">
       <div class="img-wrapper">
         <img class="team-img" src="img/sampath1.jpeg">
       </div>
@@ -145,9 +249,9 @@
     </div>
 
 
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+    <div class="team-card-container">
       <div class="img-wrapper">
-        <img class="team-img" src="img/srinu.jpeg">
+        <img class="team-img" src="img/vas.jpeg">
       </div>
       <p class="name">
         B.Srinivasulu
@@ -173,7 +277,7 @@
 
 
 
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+    <div class="team-card-container">
       <div class="img-wrapper">
         <img class="team-img" src="img/pavni2.jpeg">
       </div>
@@ -204,7 +308,7 @@
 
 
 
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+    <div class="team-card-container">
       <div class="img-wrapper">
         <img class="team-img" src="img/megha.jpeg">
       </div>
@@ -215,16 +319,16 @@
         Web Developer 
       </p>
       <div class="social-media-links">
-        <a href="http://www.twitter.com/" target="_blank">
+        <a href="http://www.twitter.com/" >
           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
         </a>
-        <a href="http://www.facebook.com/" target="_blank">
+        <a href="http://www.facebook.com/" >
           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
         </a>
-        <a href="http://www.instagram.com/" target="_blank">
+        <a href="http://www.instagram.com/" >
           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
         </a>
-        <a href="http://www.gmail.com/" target="_blank">
+        <a href="http://www.gmail.com/" >
           <img src="img/icons8-linkedin-30.png">
         </a>
       </div>
@@ -233,7 +337,7 @@
 
 
 
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+    <div class="team-card-container">
       <div class="img-wrapper">
         <img class="team-img" src="img/nageshwari.jpeg">
       </div>
@@ -244,16 +348,16 @@
         Web Developer 
       </p>
       <div class="social-media-links">
-        <a href="http://www.twitter.com/" target="_blank">
+        <a href="http://www.twitter.com/" >
           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
         </a>
-        <a href="http://www.facebook.com/" target="_blank">
+        <a href="http://www.facebook.com/" >
           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
         </a>
-        <a href="http://www.instagram.com/" target="_blank">
+        <a href="http://www.instagram.com/" >
           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
         </a>
-        <a href="http://www.gmail.com/" target="_blank">
+        <a href="http://www.gmail.com/" >
           <img src="img/icons8-linkedin-30.png">
         </a>
       </div>
