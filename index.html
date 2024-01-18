@@ -20,7 +20,7 @@ body{
 }
 a{
 font-size: 20px;
-font-style: italic;
+
 }
 html {
   scroll-behavior: smooth;
@@ -66,9 +66,16 @@ body{
 }
 
 .mb {
-  margin-bottom: 50px;
+  margin-top: -20%;
+  font-size: 40px;
   
 }
+.c{
+  color: #ffffff;
+  margin-top: 1%;
+}
+
+
 .c{
   font-size: 25px;
   font-weight: 700;
@@ -78,11 +85,13 @@ body{
 
 .mt {
   margin-top: 20px;
+  margin: 60px;
 }
 
 .section {
   background: #1d1f1e;
   padding: 80px 0px;
+  height: 400px;
  
 }
 
@@ -92,16 +101,18 @@ body{
 
 .primary {
   font-size: 35px;
-  font-weight: 700; 
+
+  margin-bottom: -25%;
 }
 
 .secondary {
   font-size: 25px;
-  font-weight: 700;
+
+  margin-top: 30%;
 }
 
 .tertiary {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .menu {
@@ -129,13 +140,13 @@ body{
   display: inline-block;
   margin-right: 30px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .hi a {
   text-decoration: none;
   color: #fff;
-  font-family:"Nunito", sans-serif ;
+
   font-weight: 800;
 }
 
@@ -147,6 +158,7 @@ body{
 .btn {
   padding: 10px 28px;
   border-radius: 40px;
+  margin-right: -10%;
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -181,9 +193,6 @@ body{
   font-weight: 900;
   
 }
-.c{
-  color: #ffffff;
-}
 
 
     </style>
@@ -198,7 +207,9 @@ body{
             <h1>Fitness Plus <span style="color: gray;">+</span></h1>
           </div>
             <ul class="nav">
+              <li class="hi"><a href="">About</a></li>
                 <li class="hi"><a href="bmi.html">Calculate BMI</a></li>
+                <li class="hi"><a href="bmi.html">Contact Us</a></li>
                 <li class="hi"><a href="contact.html">Our Team</a></li>
             </ul>
 
@@ -209,13 +220,13 @@ body{
         <div class="container flex">
             <div class="text">
                 <h1 class="mb"> 
-                  Complete<span>Daily</span> <br>
+                  Complete <span> Daily</span> <br>
                     <span>Workout</span> At Home.!
-                </h1>
+                </h1><br>
 
 
                 <p class="c">
-                  Physical fitness is not only one of the most important keys to a healthy body, it is the basis of dynamic and creative intellectual activity.
+                  Your body is capable of amazing things. Keep challenging yourself and unlocking your full potential on your fitness journey.<br> - by 
                 </p>
             </div>
 
@@ -224,21 +235,38 @@ body{
             </div>
         </div>
     </header>
+
+    <div class="section" id="explore">
+      <div class="container flex">
+          <div class="img1">
+
+            <video autoplay muted loop id="myVideo">
+              <source src="img/HI.mp4" type="video/mp4">
+            </video>
+            
+          </div>
+          <div class="text">
+              <h2 class=" mb" >Explore Our Fitness <br> <img src="" alt="">Plus+</h2>
+              <a href="register.html" class="btn mt">Register</a>
+              <a href="bmi.html" class="btn mt">Calculate BMI</a>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
   
     <div class="section" id="why-us">
         <div class="container flex">
             <div class="text">
                 <h2 class="primary mb">Why Choose Us?</h2>
-                
-                <h3 class="secondary mb">The world needs people who can train and motivate others to lose weight, regain their cardiovascular vigor, and build strength. </h3>
-                <p class="tertiary">
-                    
+                <p class="secondary mb">
+                  The world needs people who can train and motivate others to lose weight, regain their cardiovascular vigor, and build strength.
                 </p>
 
-                <h3 class="primary mb">Our advice</h3>
-                <p class="secondary mb">
-                  There's a great need for people who have the skills to motivate clients and help them to achieve their body goals.
-                </p>
+                
             </div>
             <div class="img">
                 <img src="img/yoga2.jpg" alt="" />
@@ -246,20 +274,28 @@ body{
         </div>
     </div>
    
-    <div class="section" id="explore">
-        <div class="container flex">
-            <div class="img1">
 
-              <video autoplay muted loop id="myVideo">
-                <source src="img/HI.mp4" type="video/mp4">
-              </video>
+    <div class="section" id="why-us">
+      <div class="container flex">
+          <div class="text">
               
-            </div>
-            <div class="text">
-                <h2 class="primary mb" >Explore Our Fitness <br> <img src="" alt="">Plus+</h2>
-                <a href="register.html" class="btn mt">Registration</a>
-            </div>
-        </div>
-    </div>
+              <h3 class="primary mb">Our advice</h3>
+              <p class="secondary mb">
+                There's a great need for people who have the skills to motivate clients and help them to achieve their body goals.
+              </p>
+          </div>
+          <div class="img">
+              <img src="img/less-removebg-preview.png" alt="" />
+          </div>
+      </div>
+  </div>
+ 
+
+
+
+    
+
+
+
 </body>
 </html>
