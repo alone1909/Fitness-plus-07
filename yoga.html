@@ -1,306 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga Page</title>
+    <title>Yoga tips</title>
     <style>
                 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
 
-       
-.banner1{
-    display: flex;
-    height: 50rem;
-}
-
-.banner1 .banner-1-body{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 8rem;
-
-    
-}
-.banner1 .banner-1-body h1{
-    margin-bottom: 4rem;
-}
-.banner1 .banner-1-body h1:nth-child(1){
-    color: red;
-    font-size: 5.4rem;
-    font-weight: 100;
-    
-    
-}
+        *{
+            padding: 0;
+            margin-top: 0;
+            /* background-color: rgb(141, 142, 145); */
+        }
+        body{
+            font-family: "Nunito", sans-serif;
+        }
+        
+    table{
+        border-collapse: collapse;
+        width: 90%;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
 
 
-.banner1 .banner-1-body p{
-    color: #706e78;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.banner1 .banner-1-image{
-    flex-grow: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    #img{
+        width: 99%;
+
+    }
+    #text{
+     background-color: rgb(170, 171, 174);
+     width: 100%;
+     height: 20vh;
+     margin: 0px 0px 20px;
+     border-radius: 10px;
+    }
+    #text label{
+        font-size: 40px;
+        margin: 5px 10px;
+        padding: 0 0 20px;
+        
+
+    }
+    #ptext{
+        font-size: x-large;
+        margin: 5px;
+    }
+    #resourses{
+        background-color: #949090;
+        width: 100%;
+        height: 35vh;
+
+    }
+    #resourses li{
+      padding: 8PX;
     
-}
-.banner1 .banner-1-image img{
-    width: 55rem;
-}
-.banner-2{
-    display: flex;
-    height: 50rem;
-    background: color #f3f3f3;;
-    width: 100%;
-}
-.banner-2 .banner-2-image{
-    flex-grow: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner-2 .banner-2-image img{
-    width: 35rem;
-    
-}
-.banner-2 .banner-2-body{
-    margin-top: 5.5rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    padding-left: 8rem;
-    
-}
-.banner-2 .banner-2-body h1{
-    margin-bottom: 3rem;
-    color: #000;
-}
-.banner-2 .banner-2-body h1 span{
-    color: var(--brand-color);
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html{
-    font-size: 62.5%;
-}
-body{
-    
-    font-size: 30px;
-    background-color: #ffffff;
-    background-size: cover;
-}
+        
+
+    }
+    #total table{
+        border: #949090 1px solid;
+        width: 80%;
 
 
+
+    }
+    #total table td{
+        border: #949090 1px solid;
+        /* margin: 10px; */
+        padding: 10px;
+    }
+    #total{
+        background-color: #e0d8d8;
+    }
+    #bgnr-Tips{
+        width: 90%;
+        height: 50vh;
+        display: grid;
+    }
+#item1 video{
+    margin: 10px;
+    margin: 10px;
+  
+}
+.item2 {
+   display: grid;
+   float: left;
+   margin-top: -25%;
+   margin-left: 50%;
+   width: 100%;
+
+
+}
 .nav {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-       
-
+      list-style: none;
+      display: flex;
+      flex-direction: row;
     }
-    .hi a{
-        margin:15px;
-        color: #fff;
-    }
-    
 
-   
+    .hi a {
+      margin: 15px;
+      color: #fff;
+    }
+
     .hi:hover a {
-        color: #fff;
-        text-shadow: 0px 0px 20px , 0px 0px 60px black, 0px 0px 90px black;
+      color: #fff;
+      text-shadow: 0px 0px 20px, 0px 0px 60px black, 0px 0px 90px black;
     }
 
     .menu {
-        width: 100%;
-        background: linear-gradient(to right, black 50%, gray);
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        height: 100px;
-        position: sticky;
-        top: 0px;
+      width: 100%;
+      background: linear-gradient(to right, black 50%, gray);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      height: 100px;
+      position: sticky;
+      top: 0px;
 
     }
-
 
     .flex a {
-        font-size: 20px;
-        text-decoration: none;
-       color: #ffffff;
+      font-size: 20px;
+      text-decoration: none;
+    color: #ffffff;
 
     }
-
     .flex {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: -9px;
-        padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -9px;
+      padding: 20px;
     }
 
-
-    
-    a{
-        text-decoration: none;
-        color: white;
-        font-weight: 900;
-        
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 900;
     }
 
     .f {
-        color: white;
-        font-size: 30px;
-    
-        
+      color: white;
+      font-size: 30px;
+
+
     }
+
     .btn {
-        padding: 10px 28px;
-        border-radius: 40px;
-        font-size: 20px;
-        font-weight: 400;
-        text-decoration: none;
-        color: #fff;
-        display: inline-block;
-        border: 1px solid white;
-        margin-left: 20%;
+      padding: 10px 28px;
+      border-radius: 40px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      border: 1px solid white;
+      margin-left: 20%;
     }
 
     .btn:hover {
-        background-color: black;
-        box-shadow: 0px 0px 20px white, 0px 0px 25px white, 0px 0px 30px white;
+      background-color: black;
+      box-shadow: 0px 0px 20px white, 0px 0px 25px white, 0px 0px 30px white;
     }
-    p{
-        font-size: 20px;
-    }
-    .h1{
-        text-align: center;
-        font-size: 50px;
-        color: gray;
-    }
-    div #meditation-tips {
-    width: 45%;
-    height: 100%;
-
-}
-
-#meditation-tips {
-    float: right;
-}
-
-
-
-#yoga-tips video:hover {
-    background-color: transparent;
-}
-
-
-#week {
-    width: 9vh;
-    height: 8vh;
-}
-h2{
-    margin-left: 17%;
-}
-#yoga-list {
-    margin-left: -70vh;
-margin-top: -890px;
-    width: 300px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:smaller;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    font-family: "Nunito", sans-serif;
-}
-
 
     </style>
 </head>
-
 <body>
     <div class="menu">
 
         <div class="flex">
-            <div class="x"><a href="index.html" style="color: #fff; font-size: 30px; margin-left: -130%;" >Fitness Plus+</a></div>
+          <div class="x"><a href="index.html" style="color: #fff; font-size: 30px; margin-left: -130%;">Fitness Plus+</a>
+          </div>
+          <ul class="nav">
+            <li class="hi"><a href="index.html">Home</a></li>
+            <li class="hi"><a href="bmi.html">Calculate BMI</a></li>
+            <li class="hi"><a href="contact.html">Our Team</a></li>
+            <li class="hi"><a href="next2.html">Back </a></li>
+          </ul>
     
-            <ul class="nav">
-                <li class="hi"><a href="index.html">Home</a></li>
-                <li class="hi"><a href="bmi.html">Calculate BMI</a></li>
-                <li class="hi"><a href="contact.html">Our Team </a></li>
-                <li class="hi"><a href="next2.html">Back </a></li>
-            </ul>
-    
-            <a href="register.html" class="btn">Register</a>
+          <a href="register.html" class="btn">Register</a>
     
         </div>
     
-    </div><br>
-<h1 class="h1">Yoga Page</h1>
-   
-    
-    <section class="banner1 container">
-        <div class="banner-1-body">
-            <h1>Make Your <span>Body Fit</span></h1>
-            <h1>Yoga <span>with us</span></h1>
-            <p>Yoga dosen't take time.It gives time</p>
-        </div>
-        <div class="banner-1-image">
-            <img src="img/slideshow1_img.png" alt="">
-        </div>
-    </section>
-   
-    <section class="banner-2 container">
-        <div class="banner-2-image">
-            <img src="img/slideshow1_img_2.png" alt="">
-        </div>
-        <div class="banner-2-body">
-            <h1>Welcome to <span>Yoga World</span></h1>
-            <p>Yoga World is founded with our passion for yoga and we would love to spread that love to more and more people.</p>
-            <p>We do not teach only yoga, we seek to create a yoga community where we can share daliy matter, stress at work or problem in life . Yoga is the greate recipe to communicate and balance your mind and the body</p>
-            <p>Yoga is an ancient system of physical, mental and spiritual practices that have been passed down through the generations from teacher to student. Yogic practices include breathing techniques, postures, relaxation, chanting, and other meditation methods. There are many different styles of yoga, each with their own unique focus and approach to creating a unitive state.</p><br>
-            <p>Yoga is a meditative process of self-discovery and liberation. It is a diverse collection of practices that aims to control the mind, recognize a detached witness consciousness, and free oneself from the cycle of birth and death. It teaches us to see ourselves clearly, to understand what is true about who we are, and to let go of anything that does not serve us. It helps us to become aware of our thoughts, feelings, and beliefs, and to change them when they no longer serve us. It gives us the tools to make better choices in life, and to live more fully.</p>
-        </div>
-    </section>
+      </div><br>
 
+    
+    <div id="img">
+        <img src="https://images.pexels.com/photos/6648594/pexels-photo-6648594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="99%">
+        <div id="text">
+            <label for="">What is yoga?
+        </label>
+    
+    <p id="ptext"> <b>Yoga is a Sanskrit word translated as “yoke” or “union.”</b> To yoke means to draw together, to bind together; or to unite.Its aim is to yoke or create a union of the body, mind, soul,  and universal consciousness.
+         This process of uniting the physical, mental, emotional, and spiritual aspects of ourselves is what allows yogis to experience deep states of freedom, peace and self-realization.
 
+    </p>
 
-    <div id="medical-tips">
-        <h2>Yoga Tips</h2>
-
-        <div id="meditation-tips">
-            <video src="img/Video-1.mp4" autoplay muted loop style="height: 60vh; width: 100%;"></video>
-      
-            <div id="yoga-tips">
-                <video src="yoga.mp4" autoplay muted loop style="height: 60vh; width: 100%; display: -10;"></video>
-              
-                <ul id="yoga-list" style="text-align: left;">
-                    <li>Mountain Pose (Tadasana)</li>
-                    <li>Forward Fold (Uttanasana)</li>
-                    <li> Extended Triangle</li>
-                    <li> Sphinx Pose</li>
-                    <li>Child s Pose</li>
-                    <li>Sphinx Pose</li>
-                    <li>Cobra Pose</li>
-                    <li>Downward-Facing Dog</li>
-                    <li>Cat-Cow</li>
-                </ul>
-            </div>
-        </div>
     </div>
-   
+
+    </div>
+    <div id="bgnr-Tips">
+        <div class="item1">
+            <video src="https://www.verywellfit.com/thmb/5iHLBxW6zAJLNBHN4WvYLzK8eOA=/750x0/filters:gifv(webm)/Verywell-2-3567193-ForwardBend01-110copy-598b7292d088c00013392822.gif" autoplay loop muted width="33%"></video>
+            <p>Standing Forward Bend (Uttanasana)</p>
+        </div>
+        <div class="item2">
+            <video src="https://www.verywellfit.com/thmb/IDHM9Lcx-FV3A3dwUsgn-3dYFEs=/750x0/filters:gifv(webm)/Garlandpose-d5153c197fef4f79bda28a9782abb55b.gif" autoplay loop muted width="33%"></video>
+            <p>Garland Pose (Malasana)</p>
+        </div> 
+        
+        
+        <div class="item3">
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div id="total">
+        <h2>Different Yoga Asanas</h2>
+        <table>
+            <tr>
+                <td>
+                    1. Slow Stretching Yoga Asana For Neck 
+                </td>
+                <td>26. Garudasana (Eagle Pose) </td>
+           
+              
+           
+            </tr>
+         
+           
+            <tr>
+                <td>2. Full Body Yoga Tadasana The Mountain Pose </td>
+                <td>27. Natarajasana (Lord Of The Dance Pose)</td>
+                  
+            </tr>
+
+                <tr>
+                <td>3. Standing Forward Fold Pose (Uttanasana Yoga) </td>
+                <td>28. Naukasana Posture (Boat Pose) </td>
+            </tr>
+
+            <tr>
+                <td>4. The Triangle Pose (Trikonasana Yoga) for Beginners 
+                </td>
+                <td>29. Marjariasana (Cat Pose) 
+                </td>
+            </tr>
+
+            <tr>
+                <td>5. Bow Pose (Dhanurasana Yoga) 
+                </td>
+            <td>30. Utthita Hasta Padangusthasana (Extended Hand To Toe Pose) 
+            </td>
+            </tr>
+
+
+            <tr>
+            <td>6. Surya Namaskar (Sun Salutation) 
+            </td>
+            <td>31. Hasta Uttanasana (Raised Arms Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>7. Kapalbhati Pranayama Yoga Pose for Beginner 
+            </td>
+            <td>32. Hastapadasana (Forward Bend Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>8. Bound Angle Pose – Baddha Konasana Yoga For Beginners 
+            </td>
+            <td>33. Prasarita Padottanasana (Wide-Legged Forward Bend) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>9. Relaxing Yoga Asana (Eagle Twist Yoga) 
+            </td>
+            <td>34. Vrikshasana Yoga (Tree Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>10. Headstand Pose (Sirsasana Yoga Pose) 
+            </td>
+            <td>35. Ardha Chakrasana (Half Wheel Pose) 
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>11. Sarvangasana (Shoulder Stand) for Beginner 
+            </td>
+            <td>36. Viparita Virabhadrasana (Reverse Warrior Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>12. Paschimottanasana (Forward Bend Pose) 
+            </td>
+            <td>37. Chakrasana Yoga (Full Wheel Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>13. Plough Pose (Halasana Yoga Pose) 
+            </td>
+            <td>38. Practice Ardha Chandrasana (Half Moon Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>14. Ardha Halasana (Half Plough Pose) 
+            </td>
+            <td>39. Adho Mukha Svanasana 
+            </td>
+        </tr>
+
+        <tr>
+            <td>15. Bhujangasana (Cobra Pose) 
+            </td>
+            <td>40. Vyaghrasana (Tiger Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>16. Pavanamuktasana (Wind Removing Pose) 
+            </td>
+            <td>41. Yoga Bakasana (Crow Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>17. Uttana Padasana (The Raised-Leg Pose) 
+            </td>
+            <td>42. Makarasana (The Crocodile Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>18. Setu Bandhasana Yoga Pose (Bridge Pose) 
+            </td>
+            <td>43. Salabhasana (Locust Pose) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>19. Vajrasana (Diamond Pose) 
+            </td>
+            <td>44. Bhekasana (Frog Posture) 
+            </td>
+        </tr>
+
+        <tr>
+            <td>20. Half Twist Pose (Matsyendrasan) for Beginner 
+            </td>
+            <td>45. Gomukhasana Yoga (The Cow Head Pose) 
+            </td>
+        </tr>
+      
+        <tr>
+            <td>21. Ananda Balasana (Happy Baby Pose) 
+            </td>
+            <td>46. Virasana Yoga Pose (Hero Pose)
+            </td>
+        </tr>
+
+        <tr>
+            <td>22. Balasana (Child’s Pose)  
+            </td>
+            <td>47. Supta Virasana Yoga (Reclined Hero Pose) 
+            </td>
+        </tr>
+        <tr>
+            <td>23. Shavasana (Corpse Pose) 
+            </td>
+            <td>48. Kumbhakasana (Plank Pose) 
+            </td>
+        </tr>
+        <tr>
+            <td>24. Virabhadrasana (Warrior Pose) 
+            </td>
+            <td>49. Vasisthasana (Side Plank Pose) 
+            </td>
+        </tr>
+        <tr>
+            <td>25. Ustrasana (Camel Pose) 
+            </td>
+            <td>50. Utthan Pristhasana (Lizard Pose) </td>
+        </tr>
+           
+
+
+        </table>
+    </div>
+
+
+    <div id="resourses">
+        <h2> Resources</h2>
+        <li><a href="https://youtu.be/brjAjq4zEIE?si=GCjebIPSu0J6Kgon">Video-1</a></li>
+        <li><a href="https://youtu.be/omh5JBndc14?si=quZNrJ7VQSmV7-Wk">Video-2</a></li>
+        <li><a href="https://youtu.be/qxY4t0QJ3vM?si=QaUsgof-kk5pIlFC">Video-3</a></li>
+        <li><a href="https://youtu.be/s2NQhpFGIOg?si=CivthuN1zlmS_meM">Video-4</a></li>
+        <li><a href="https://youtu.be/_8kV4FHSdNA?si=rQXot3spdZDbpw4H">Importance of Yoga</a></li>
+
+
+    </div>
+
+
     
-   
-
-
+</body>
 </html>

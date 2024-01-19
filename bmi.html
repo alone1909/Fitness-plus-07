@@ -7,7 +7,7 @@
     <title>BMI</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
-
+ 
         * {
             font-family:"Nunito", sans-serif;
         }
@@ -37,7 +37,7 @@
             cursor: pointer;
         }
         button{
-            font-family: 'Baloo Bhai', 'cursive';
+            font-family: "Nunito", sans-serif;
         margin:  9px;
         background-color: black;
         color: white;
@@ -47,12 +47,13 @@
         font-size: 20px;
         cursor: pointer;
         text-decoration: none;
+        margin-right: 33%;
 
         }
 
         button:hover {
-            box-shadow: 0px 0px 30px white, 0px 0px 60px white, 0px 0px 90px white;
-            transition: 1s;
+            box-shadow: 0px 0px 10px white, 0px 0px 60px white, 0px 0px 30px white;
+   
         }
 
         .input-section input {    
@@ -60,7 +61,9 @@
             padding: 10px;
             font-size: 20px;
             border-radius: 30px;
+            margin-right: 30%;
         }
+       
 
         #fitnessDetails {
             border: 1px solid transparent;
@@ -68,17 +71,21 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            text-shadow: 0px 0px 20px rgb(161, 161, 228),0px 0px 40px rgb(204, 224, 231),0px 0px 80px rgb(175, 163, 186)
+            text-shadow: 0px 0px 20px rgb(161, 161, 228),0px 0px 30px rgb(204, 224, 231),0px 0px 20px rgb(175, 163, 186)
 
         }
         h1{
             color: white;
+            margin-right: 30%;
         }
         h2{
             color: white;
+            margin-right: 30%;
         }
         #fitnessDetails{
             color: white;
+            margin-right: 25%;
+    
         }
         label{
             color: white;
@@ -86,6 +93,7 @@
         }
         #bmiResult{
             color: aliceblue;
+            margin-right: 30%;
 
         }
         
@@ -164,6 +172,12 @@
       background-color: black;
       box-shadow: 0px 0px 20px white, 0px 0px 25px white, 0px 0px 30px white;
     }
+    .img img{
+        width: 40%;
+        height: 40%;
+        margin-left: 50%;
+        margin-bottom: -43%;
+    }
     </style>
 </head>
 
@@ -190,6 +204,9 @@
 
 
     <div class="container">
+        <div class="img">
+            <img src="img/charts.avif" alt="">
+        </div>
         <h1>BMI Calculator</h1>
         <div class="input-section">
             <label for="weight">Weight (kg):</label>
