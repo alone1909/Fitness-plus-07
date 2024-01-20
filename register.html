@@ -149,6 +149,13 @@
       color: #fff;
     }
 
+    .input-field input:focus~label,
+    .input-field input:valid~label {
+      font-size: 0.8rem;
+      top: 10px;
+      transform: translateY(-100%);
+    }
+
     .register {
       text-align: center;
       margin-top: 30px;
@@ -171,10 +178,10 @@
       </div>
 
       <ul class="nav">
-        <li class="hi"><a href="index.html">Home</a></li>
+        <li class="hi"><a href="about.html">About</a></li>
         <li class="hi"><a href="bmi.html">Calculate BMI</a></li>
-        <li class="hi"><a href="last.html">Contact Us</a></li>
         <li class="hi"><a href="contact.html">Our Team</a></li>
+        <li class="hi"><a href="last.html">Contact Us</a></li>
       </ul>
 
 
@@ -214,17 +221,17 @@
         <label for="">Do you have any medical issues !</label>
         <button onclick="myFunction()" class="button">Yes</button><br>
 
-
         <button class="button"><a href="index.html">Back</a></button>
         <button class="button"><a href="next2.html">Next</a></button>
     </form>
+  </div>
 
     <script>
       function myFunction() {
         alert("Please Consult To The doctor");
       }
     </script>
-  </div>
+
 
 
 </body>
