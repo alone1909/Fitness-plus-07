@@ -21,7 +21,7 @@
       line-height: 25px;
     }
 
-    .responsive {
+    .res{
       min-height: 75px;
       border: 2px solid #fff;
       height: 800px;
@@ -35,7 +35,7 @@
       justify-content: space-evenly;
     }
 
-    .img-wrapper {
+    .img{
       width: 70%;
       margin-top: 10px;
     }
@@ -69,12 +69,15 @@
     .team-img {
       width: 80%;
       border-radius: 50%;
-      height: 170px;
+      height: 190px;
+    }
+    .team-img:hover{
+      transition: 1s;
+      transform: scale(1.1);
     }
 
-    .team-card-container {
+    .team{
       width: 280px;
-      margin: 0 0 40px 0;
     }
 
     button {
@@ -185,10 +188,12 @@
 
 
   <div class="menu">
-
     <div class="flex">
-      <div class="x"><a href="index.html" style="color: #fff; font-size: 40px; margin-left: -60%;">Fitness Plus <span style="color: gray;">+</span></a>
+
+      <div class="x">
+        <a href="index.html" style="color: #fff; font-size: 40px; margin-left: -60%;">Fitness Plus <span style="color: gray;">+</span></a>
       </div>
+
       <ul class="nav">
         <li class="hi"><a href="about.html">About</a></li>
         <li class="hi"><a href="bmi.html">Calculate BMI</a></li>
@@ -203,21 +208,10 @@
   </div><br>
 
 
+  <div class="res">
 
-
-
-
-
-
-
-
-
-
-
-  <div class="responsive">
-
-    <div class="team-card-container">
-      <div class="img-wrapper">
+    <div class="team">
+      <div class="img">
         <img class="team-img" src="img/sampath1.jpeg">
       </div>
       <p class=" name">
@@ -244,8 +238,8 @@
     </div>
 
 
-    <div class="team-card-container">
-      <div class="img-wrapper">
+    <div class="team">
+      <div class="img">
         <img class="team-img" src="img/vas.jpeg">
       </div>
       <p class="name">
@@ -272,8 +266,8 @@
 
 
 
-    <div class="team-card-container">
-      <div class="img-wrapper">
+    <div class="team">
+      <div class="img">
         <img class="team-img" src="img/pavni2.jpeg">
       </div>
       <p class="name">
@@ -303,8 +297,8 @@
 
 
 
-    <div class="team-card-container">
-      <div class="img-wrapper">
+    <div class="team">
+      <div class="img">
         <img class="team-img" src="img/megha.jpeg">
       </div>
       <p class=" name">
@@ -332,8 +326,8 @@
 
 
 
-    <div class="team-card-container">
-      <div class="img-wrapper">
+    <div class="team">
+      <div class="img">
         <img class="team-img" src="img/nageshwari.jpeg">
       </div>
       <p class="name">
