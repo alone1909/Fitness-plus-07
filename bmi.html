@@ -22,7 +22,6 @@
             margin-top: 5%;
             font-size: 2em;
             border: 5px solid gray;
-
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -213,9 +212,9 @@
         <h1>BMI Calculator</h1>
         <div class="input-section">
             <label for="weight">Weight (kg):</label>
-            <input type="number" id="weight" placeholder="Enter weight"><br><br>
+            <input type="text" id="weight" maxlength="3" placeholder="Enter weight"><br><br>
             <label for="height">Height (cm):</label>
-            <input type="number" id="height" placeholder="Enter height"><br><br>
+            <input type="text" id="height" maxlength="3" placeholder="Enter height"><br><br>
             <button onclick="calculateBMI()">Calculate BMI</button>
         </div>
 
