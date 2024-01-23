@@ -203,7 +203,7 @@
           <label>Enter your Last Name</label>
         </div>
         <div class="input-field">
-          <input type="email" required>
+          <input type="email" required maxlength="35">
           <label>Enter your Email</label>
         </div>
         <div class="input-field">
@@ -211,15 +211,16 @@
 
         </div>
         <div class="input-field">
-          <input type="number" required>
+          <input type="text" required maxlength="3">
           <label>Enter your Height</label>
         </div>
         <div class="input-field">
-          <input type="number" required>
+          <input type="text" required maxlength="3">
           <label>Enter your Weight</label>
         </div>
         <label for="">Do you have any medical issues !</label>
-        <button onclick="myFunction()" class="button">Yes</button><br>
+        <button onclick="myFunction()" class="button">Yes</button>
+        <button onclick="myidea()" class="button">No</button><br>
 
         <button class="button"><a href="index.html">Back</a></button>
         <button class="button"><a href="next2.html">Next</a></button>
@@ -229,6 +230,9 @@
     <script>
       function myFunction() {
         alert("Please Consult To The doctor");
+      }
+      function myidea(){
+        alert("Please Click On Next")
       }
     </script>
 
